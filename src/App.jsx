@@ -11,14 +11,14 @@ const router= createBrowserRouter(
   [
     {
      path:"/",
-    element:<div className='w-full h-screen flex flex-col bg-[#94a3b8]'>
+    element:<div className='w-full h-screen flex flex-col bg-[#000000] rounded-3xl '>
             <Navbar/>
             <Home/>
            </div>
     },
     {
       path:"/pastes",
-      element:<div className='w-full h-screen flex flex-col bg-[#94a3b8]' > 
+      element:<div className='w-full h-screen flex flex-col bg-[#000000] rounded-3xl' > 
              <Navbar/>
              <Paste/>
             </div>
@@ -26,7 +26,7 @@ const router= createBrowserRouter(
     },
     {
     path:"/pastes/:id",
-    element:<div className='w-full h-screen flex flex-col bg-[#94a3b8]' >
+    element:<div className='w-full h-screen flex flex-col bg-[#000000] rounded-3xl' >
           <Navbar/>
           <Viewpaste/>
            </div>
