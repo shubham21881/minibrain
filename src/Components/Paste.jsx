@@ -7,7 +7,7 @@ import { FaEye } from "react-icons/fa";
 import { IoCopy } from "react-icons/io5";
 import { removefrompastes} from "../Features/Pastes/PasteSlice"
 import toast from 'react-hot-toast';
-
+import { FormatDate } from '../utlis/formardate';
 
 
 function Paste() {
@@ -78,7 +78,7 @@ function Paste() {
                       }}> <li><IoCopy /></li></button>
                     
                   </ul>
-                  <p>{paste.createdAt}</p>
+                  <p>{ FormatDate(paste.createdAt)}</p>
                 </div>
               
               </li>
